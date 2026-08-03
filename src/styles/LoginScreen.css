@@ -1,0 +1,125 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5d89d1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Trebuchet MS", sans-serif;
+  overflow: hidden;
+}
+
+.login-top-glow {
+  height: 20%;
+  background: linear-gradient(135deg, #2332A6, #2332A6);
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.login-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.windows-logo {
+  width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+.login-text .microsoft {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: -4px;
+}
+
+.login-text .windows {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-text .xp {
+  font-size: 1.5rem;
+  color: orange;
+  margin-left: 4px;
+}
+
+.login-text .subtext {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: white;
+}
+
+.login-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.login-user:hover {
+  transform: scale(1.03);
+}
+
+.login-user img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+  box-shadow: 0 0 4px #000;
+  margin-bottom: 0.5rem;
+}
+
+.username {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.login-footer {
+  background: linear-gradient(to top, #17366d, #2332A6);
+  color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+}
+
+.shutdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shutdown img {
+  width: 55px;
+  height: 55px;
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 0 2rem;
+  position: relative;
+}
+
+/* Partition line */
+.login-divider {
+  width: 2px;
+  height: 400px;
+  background-color: #c2d2f0;
+  margin: 0 3rem;
+}

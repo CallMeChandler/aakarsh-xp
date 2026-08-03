@@ -1,0 +1,122 @@
+/* Container */
+.xp-timeline-container {
+    position: relative;
+    padding-left: 60px;
+    overflow-y: auto;
+    max-height: 100%;
+    height: 100%;
+    /* ensure full height for scroll tracking */
+}
+
+/* Sticky XP header */
+.xp-timeline-header {
+    position: relative;
+    top: 0;
+    background: linear-gradient(to right, #0a64ad, #3ba3ff);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 10;
+    border-bottom: 2px solid #808080;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline vertical moving gradient line */
+.xp-timeline-line {
+    position: absolute;
+    left: 88px;
+    top: 50px;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg,
+            #00eaff,
+            #1e90ff,
+            #00ff87,
+            #1e90ff,
+            #00eaff);
+    background-size: 100% 300%;
+    animation: gradientMove 6s ease-in-out infinite;
+    border-radius: 2px;
+    z-index: 0;
+    transform-origin: top;
+    height: 90vh;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* Timeline item layout */
+.xp-timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+/* Dots */
+.xp-timeline-dot {
+    position: absolute;
+    left: 22px;
+    top: 38px;
+    width: 16px;
+    height: 16px;
+    background: #6bf753;
+    border: 3px solid #2b85ff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Role Card */
+.xp-role-card {
+    background: #ece9d8;
+    border: 2px solid #9fa0a0;
+    border-radius: 6px;
+    padding: 10px;
+    width: calc(100% - 60px);
+    box-shadow: inset 1px 1px #fff, inset -1px -1px #c0c0c0;
+}
+
+/* Card header */
+.xp-role-header {
+    background: linear-gradient(to right, #0a64ad, #3ba3ff);
+    color: white;
+    padding: 5px 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #808080;
+}
+
+.xp-role-date {
+    font-size: 0.85em;
+    color: #e6e6e6;
+}
+
+/* Bullet points */
+.xp-role-bullets {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.xp-role-bullets li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+/* Tools text */
+.xp-role-tools {
+    font-size: 0.85em;
+    color: #333;
+    margin-top: 8px;
+    font-style: italic;
+}

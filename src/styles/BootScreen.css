@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: local('Trebuchet MS');
+}
+
+.boot-screen {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.logo-and-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.windows-logo {
+  width: 20vw; /* dynamic scaling based on screen width */
+  max-width: 320px;
+  min-width: 220px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.windows-text {
+  text-align: left;
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 5px;
+}
+
+.microsoft {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+}
+
+.windows-line {
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  margin-top: -2px;
+}
+
+.windows {
+  color: white;
+}
+
+.xp {
+  color: orange;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/* Blue loading bar animation */
+.loading-bar {
+  width: 200px;
+  height: 15px;
+  background-color: #222;
+  border-radius: 5%;
+  border: 1px solid #444;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-indicator {
+  width: 40px;
+  height: 100%;
+  background-color: #3399ff;
+  animation: move 1.5s infinite linear;
+}
+
+.block {
+  width: 20px;
+  height: 100%;
+  background-color: #3399ff;
+  margin-right: 4px;
+  border-radius: 1px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(160px);
+  }
+}
+
+.boot-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align:left;
+  font-size: 20px;
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.boot-footer-left {
+    text-align: left;
+    
+}
+
+.boot-footer-right {
+    text-align: right;
+}
+
